@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { themeVars } from './theme.js';
 import Header from './sections/Header.jsx';
 import Hero from './sections/Hero.jsx';
@@ -172,6 +173,7 @@ export default function App() {
         <HowIUsedAI />
       </main>
       <Footer go={go} />
+      <Analytics />
     </div>
   );
 }
